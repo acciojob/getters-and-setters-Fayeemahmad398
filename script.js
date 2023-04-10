@@ -5,6 +5,12 @@ class Person {
 		this.name=name;
 		this.age=age;
 	}
+	get getters(){
+		return this.name;
+	}
+	set setters(age){
+		this.age=age;
+	}
 }
 
 class Student extends Person {
