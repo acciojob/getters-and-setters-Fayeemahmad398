@@ -1,4 +1,5 @@
-//complete this code
+
+
 class Person {
 	constructor(name,age)
 	{
@@ -8,22 +9,33 @@ class Person {
 	get getters(){
 		return this.name;
 	}
-	set setters(age){
-		this.age=age;
-	}
+	set setters(age){}
 }
+
+
 
 class Student extends Person {
+	constructor(name){
+		super();
+		this.name=name;
+	}
 	function study(){
-		console.log(`${name} is studing`)
+		console.log(`${name} is studing`);
 	}
 }
 
+
+
 class Teacher extends Person {
+	constructor(name){
+		super(name);
+		this.name=name;
+	}
 	function teach(){
 		console.log(`${name} is teaching`);
 	}
 }
+
 
 // Do not change the code below this line
 window.Person = Person;
