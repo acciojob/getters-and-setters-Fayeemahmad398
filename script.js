@@ -9,15 +9,19 @@ class Person {
 	get getters(){
 		return this.name;
 	}
-	set setters(age){}
+	set setters(age){
+		this.age=age;
+	}
 }
 
 
 
 class Student extends Person {
-	constructor(name){
+	constructor(name,age){
 		super();
 		this.name=name;
+		this.age=age;
+		
 	}
 	function study(){
 		console.log(`${name} is studing`);
@@ -27,9 +31,10 @@ class Student extends Person {
 
 
 class Teacher extends Person {
-	constructor(name){
-		super(name);
+	constructor(name,age){
+		super();
 		this.name=name;
+		this.age=age;
 	}
 	function teach(){
 		console.log(`${name} is teaching`);
