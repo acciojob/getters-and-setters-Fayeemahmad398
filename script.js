@@ -17,27 +17,27 @@ class Person {
 
 
 class Student extends Person {
-	constructor(name,age){
-		super();
-		this.name=name;
-		this.age=age;
+	// constructor(name,age){
+		// super();
+		// this.name=name;
+		// this.age=age;
 		
-	}
+	// }
 	function study(){
-		console.log(`${name} is studing`);
+		console.log(`${this.name} is studing`);
 	}
 }
 
 
 
 class Teacher extends Person {
-	constructor(name,age){
-		super();
-		this.name=name;
-		this.age=age;
-	}
+	// constructor(name,age){
+	// 	super();
+	// 	this.name=name;
+	// 	this.age=age;
+	// }
 	function teach(){
-		console.log(`${name} is teaching`);
+		console.log(`${this.name} is teaching`);
 	}
 }
 
